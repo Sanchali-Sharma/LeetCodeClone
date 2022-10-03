@@ -89,52 +89,50 @@ footer{
 }
 #two{
     display: grid;
-    margin:0 auto;
+    margin:20px auto;
     max-width: 1152;
     max-height: 809;
     width: 1152;
     height: 809;
-    grid-template-columns: 300px 410px 186px;
+    grid-template-columns: 300px 410px 410px;
     grid-template-rows: 186px 185px 300px;
     column-gap: 15px;
     row-gap: 15px;
+    margin-bottom: 200px;
 
 }
 #profile{
     grid-column: 1;
-    grid-row: 1 / 3;
-    box-shadow: 2px -2px 2px -2px rgb(72, 70, 70);
+    grid-row: 1 / 4;
     background-color: white;
 }
 #stats{
     grid-column: 2;
     grid-row: 1;
-    box-shadow: 5px rgb(72, 70, 70);
     background-color: white;
 }
 #badges{
     grid-column: 3;
     grid-row: 1;
-    box-shadow: 5px rgb(72, 70, 70);
     background-color: white;
 }
 #activity{
-    grid-column: 2 /3;
+    grid-column-start: 2;
+    grid-column-end: 4;
     grid-row: 2;
-    box-shadow: 5px rgb(72, 70, 70);
     background-color: white;
 }
 #history{
-    grid-column: 2/3;
+    grid-column: 2/4;
     grid-row: 3;
-    box-shadow: 5px  rgb(72, 70, 70);
     background-color: white;
+    max-height: 206px;
 }
 .two2{
     max-width: 1004px;
     width:1004px;
     max-height:1965px;
-    height: 1965px;
+    height: 1500px;
     margin: 0 auto;
 
 } 
@@ -144,6 +142,7 @@ footer{
     margin:-60px auto 0 auto;
     display:flex;
     justify-content: space-evenly;
+    
 } 
 #cup{
     height:400px;
@@ -154,6 +153,7 @@ footer{
     position: relative;
     text-align: center;
     padding:0 235.5px;
+    background-image: linear-gradient(to bottom, #252B32 0%, #252B32 22%,whitesmoke 22%, whitesmoke 100%);
     /* background-color: #252B32;   */
     /* background-repeat: no-repeat;
     background-size: 300px 400px ; */
@@ -162,12 +162,19 @@ footer{
     width:385px;
     height: 194px;
     border-radius: 25px 25px 0 0;
+    box-shadow: 0 1px 5px 0 rgba(182, 181, 181, 0.2), 0 1px 5px 0 rgba(176, 175, 175, 0.19);
 }
 .para{
     background-color:white ;
+    margin-top: -5px;
+    padding-top: 15px;
+    padding-left: 10px;
+    text-align: left;
     font-size:x-large;
     font-family: 'Inter Tight', sans-serif;
-    border-radius: 0 0 25px 25px;;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0 1px 5px 0 rgba(182, 181, 181, 0.2), 0 1px 5px 0 rgba(176, 175, 175, 0.19);
+
 }
 #div2{
     display:flex;
@@ -184,4 +191,150 @@ footer{
 .para2{
     font-size:x-large;
     font-family: 'Inter Tight', sans-serif;
+}
+#two div{
+    border-radius: 10px;
+    box-shadow: 0 1px 5px 0 rgba(182, 181, 181, 0.2), 0 1px 5px 0 rgba(176, 175, 175, 0.19);
+}
+#two img{
+    max-width: 830px;
+}
+#activity p{
+    margin-top: 20px;
+}
+#div3{
+    max-width: 643px;
+    height: 340px;
+    margin:50px auto 0 auto;
+    overflow: hidden;
+    border-radius:10px ;
+    box-shadow: 0 1px 5px 0 rgba(182, 181, 181, 0.2), 0 1px 5px 0 rgba(176, 175, 175, 0.19);
+}
+#div3 img{
+    width: 124px;
+    height: 60px;
+    border-radius: 10px;
+}
+#div3 ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+.elements{
+    position:absolute;
+    top:0;
+    width:100%;
+
+}
+.but{
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+}
+.elements a{
+    display: flex;
+    align-items: flex-start;
+    font-size: large;
+    font-family: 'Inter Tight', sans-serif;
+    text-decoration: none;
+    color: rgb(66, 65, 65);
+    
+}
+
+.elements p{
+    display:flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.elements p img{
+    margin:0 10px;
+}
+.elements {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px 0 rgba(182, 181, 181, 0.2), 0 1px 5px 0 rgba(176, 175, 175, 0.19);
+}
+.hov:hover{
+    cursor: pointer;
+    color:rgb(42, 42, 232);
+}
+.contimg a, .contimg2 a{
+    text-decoration: none;
+    color:rgb(8, 8, 8) ;       
+}
+.contimg a :hover~.para,.contimg a{
+        box-shadow: 0 3px 10px 0 rgba(182, 181, 181, 0.2), 0 3px 10px 0 rgba(176, 175, 175, 0.19);
+}
+.t{
+    border-radius:25px 25px 0 0 ;
+}
+.head{
+    text-align: left;
+    margin-left:200px;
+    font-size:xx-large;
+    font-family: 'Inter Tight', sans-serif;
+}
+.elements a:hover{
+    color:rgb(42, 42, 232) ;
+}
+
+.carousel{
+    width: 1286px;
+    position: relative;
+    height: 340px;
+    transition: transform 250ms ease-in;
+}
+.a{
+    text-decoration: none;
+    font-size:large;
+    color: #252B32;
+    font-family: 'Inter Tight', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding:10px 0;
+    
+    
+}
+.para1{
+    font-size:medium;
+    font-family: 'Inter Tight', sans-serif;
+    margin-left: 20px;
+}
+#file1{
+    width:300px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    
+}
+#file2{
+    width:300px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    
+}
+#file3{
+    width:300px;
+    margin-left: 50px;
+    
+    
+}
+.a:hover{
+    background-color: rgb(218, 218, 218);
+}
+nav a{
+    text-decoration: none;
+    font-family: 'Inter Tight', sans-serif;
+    color: rgb(98, 96, 96);
+
+}
+nav li :hover{
+    color: rgb(24, 22, 22);
+}
+.hm{
+    font-size: x-small;
+    font-family:'Inter Tight', sans-serif; 
+    margin-left: 40px;
+    color: #7e7f80;
 }
